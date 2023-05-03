@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class ReusableCard extends StatelessWidget {
 
-ReusableCard({required this.colour,required this.cardChild,this.onPress});
+ReusableCard({required this.colour,this.cardChild,this.onPress});
 final Color colour; //immutable means unchangeable, final is used so the property can't be changed again
-final Widget cardChild;
+final Widget ?cardChild;
 final Function() ?onPress;
 
   @override
